@@ -1,154 +1,310 @@
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a> 
-        <a href="#mywork">Dashboards</a>
-        <a href="#ai-automation">AI Automation</a>
-        <a href="#certifications">Certifications</a>
-    </nav>
-
-    <!-- HERO / ABOUT SECTION -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<div id="cert-modal" class="cert-modal">
+<span class="cert-modal-close" id="certModalClose">&times;</span>
+<img class="cert-modal-content" id="certModalImg" src="" alt="Certificate">
+</div>
+<body>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a> <!-- Add this line -->
+<a href="#mywork">Dashboards</a>
+<a href="#ai-automation">AI Automation</a>
+<a href="#certifications">Certifications</a>
+</nav>
+ 
     <section class="about-section" id="about">
-        <img src="Images/tools/P.jpeg"
+<img src="Images/tools/P.jpeg"
             alt="Profile Photo"
             class="profile-photo"
             id="profilePhoto"
             draggable="false"
             oncontextmenu="return false;">
-        <div class="about-content">
-            <h1>Humera Shaik</h1>
-            <p>
-               <strong>Business Intelligence & MIS Automation Engineer</strong> <br>
-               Specializing in converting intensive manual operations into high-efficiency automated data architectures using Low-Code AI Agents, Advanced Excel Scripting, and Power Automate.
-            </p> 
-               <a href="Images/tools/HUMERA SHAIK.pdf" target="_blank" class="resume-btn">Resume</a>
-        </div>
-        <div class="contact-icons">
-            <a class="contact-icon" href="tel: +91 7382273550" title="Contact" target="_blank"><i class="fas fa-phone"></i></a>
-            <a class="contact-icon" href="mailto:humerah610@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a class="contact-icon" href="https://www.linkedin.com/in/humerashaik-dataanalyst/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a class="contact-icon" href="https://github.com/HumeraShaik24" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section class="skills-section" id="skills">
-        <h2>Skills</h2>
-        <div class="skills-icons">
-            <img src="Images/tools/Excel.jfif" alt="Microsoft Excel" class="skill-icon">
-            <img src="Images/tools/PowerBi.jfif" alt="Power BI" class="skill-icon">
-            <img src="Images/tools/Tableau.png" alt="Tableau" class="skill-icon">
-            <img src="Images/tools/sql.jfif" alt="PostgreSQL" class="skill-icon">
-            <img src="Images/tools/python.png" alt="Python" class="skill-icon">
-            <img src="Images/tools/pd.jpg" alt="Pandas" class="skill-icon">
-            <img src="Images/tools/plt.png" alt="Matplotlib" class="skill-icon">
-            <img src="Images/tools/sns.png" alt="Seaborn" class="skill-icon">
-            <img src="Images/tools/AI.png" alt="AI Automation" class="skill-icon">
-            <img src="Images/tools/ML.png" alt="Machine Learning" class="skill-icon">
-            <img src="Images/tools/Chatgpt.png" alt="Chatgpt" class="skill-icon">
-            <img src="Images/tools/co.jfif" alt="Copilot" class="skill-icon">
-            <img src="Images/tools/prompt.jfif" alt="Prompt Engineering" class="skill-icon">
-        </div>
-        <div class="contact-icons">
-            <a class="contact-icon" href="tel:+91 7382273550" title="Contact" target="_blank"><i class="fas fa-phone"></i></a>
-            <a class="contact-icon" href="mailto:humerah610@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a class="contact-icon" href="https://www.linkedin.com/in/humerashaik-dataanalyst/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a class="contact-icon" href="https://github.com/HumeraShaik24" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-    </section>
-
-    <!-- EXPERIENCE SECTION -->
-    <section class="experience-section" id="experience">
-        <h2>Experience</h2>
-        <div class="experience-cards">
-            <!-- Card 1: Updated for Bhavna Corp with High Impact Text -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="Images/tools/bhavna_corp_logo.jpg" alt="Bhavna Software" class="exp-cert-img">
-                        <div class="cert-title">MIS & Automation Executive <br>Bhavna Software India Pvt. Ltd. (Nov 2025 – Present)</div>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="cert-title">Core Contributions</div>
-                        <p>Engineered multiple touchless operational workflows and financial verification engines. Optimized multi-day reporting metrics into instantaneous single-prompt updates, deployed custom low-code Copilot agents, and designed interactive business intelligence models to mitigate revenue leakage and reduce overhead.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="Images/certificate/Kulturehire.png" alt="Kulturehire" class="exp-cert-img">
-                        <div class="cert-title">Internship</div>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="cert-title">Internship</div>
-                        <p>Worked on real-world analytics projects involving SQL, Python, Excel, and Power BI. Built interactive dashboards, performed data cleaning and analysis, and generated insights to support business decisions.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                     <img src="Images/certificate/tata.png" alt="TATA Simulation" class="exp-cert-img">
-                     <div class="cert-title">Job Simulation</div>
-                    </div>
-                    <div class="flip-card-back">
-                         <div class="cert-title">TATA Job Simulation</div>
-                         <p>Prepared strategic questions and created data visuals to support senior leadership in effective decision-making.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                       <img src="Images/certificate/Quantium.png" alt="Quantium Simulation" class="exp-cert-img">
-                       <div class="cert-title">Job Simulation</div>
-                    </div>
-                    <div class="flip-card-back">
-                       <div class="cert-title">Quantium Job Simulation</div>
-                       <p>Gained expertise in data preparation, customer insights, uplift testing, and strategic reporting for commercial decision-making.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contact-icons">
-          <a class="contact-icon" href="tel:+91 7382273550" title="Contact" target="_blank"><i class="fas fa-phone"></i></a>
-          <a class="contact-icon" href="mailto:humerah610@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-          <a class="contact-icon" href="https://www.linkedin.com/in/humerashaik-dataanalyst/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a class="contact-icon" href="https://github.com/HumeraShaik24" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section class="projects-section" id="projects">
-        <h2>Corporate Automation Portfolio</h2>
-        <div class="projects-cards">
-            
-            <!-- Project 1: The Multi-Day Labor Saver -->
-            <div class="project-card">
-                <h3>Cross-Functional YTD Performance Slide Generator</h3>
-                <p><strong>Business Impact: Engineered an optimization framework that transformed a high-overhead manual compilation process requiring 2 full-time employees an entire business day to complete into a touchless execution.</strong> Automatically parses raw workforce databases and generates clean individual employee YTD performance presentations instantly.</p>
-                <small style="color: #3b82f6; font-weight: bold;">Tech Stack: Excel Scripting / Office Automation</small>
-            </div>
-
-            <!-- Project 2: AI Master Sync -->
-            <div class="project-card">
-                <h3>Enterprise Master Ledger AI Synchronization Agent</h3>
-                <p><strong>Business Impact:</strong> Eradicated manual structural updates to the master corporate infrastructure. Configured a generative low-code agent that accurately appends weekly transactional data dumps to the Master Timesheet repository via basic natural language prompts.</p>
-                <small style="color: #3b82f6; font-weight: bold;">Tech Stack: Microsoft Copilot Studio / Conversational AI</small>
-            </div>
-
-            <!-- Project 3: Financial Controls -->
-            <div class="project-card">
-                <h3>Automated Invoice Auditing & Revenue Leakage Validation Engine</h3>
-                <p><strong>Business Impact:</strong> Minimizes corporate transaction risk. Formulated an automated governance script that cross-references complex multi-layered invoicing spreadsheets against internal organization charts and rules to isolate error metrics and compute team-wise billing losses seamlessly.</p>
-                <small style="color: #3b82f6; font-weight: bold;">Tech Stack: Advanced Excel / VBA Optimization / Financial Modeling</small>
-            </div>
-
-            <!-- Project 4: Compliance System -->
-            <div class="project-card">
-                <h3>Touchless Operations Leave Audit & Power Automate Pipeline</h3>
+<div class="about-content">
+<h1>Humera Shaik</h1>
+<p>
+               AI-Driven MIS Executive  → Data Analyst | Advanced Excel • Python • ML • BI Dashboards • Ethical AI
+</p> 
+<a href="Images/tools/HUMERA SHAIK.pdf" target="_blank" class="resume-btn">Resume</a>
+</div>
+<div class="contact-icons">
+<a class="contact-icon" href="tel: +91 7382273550" title="Contact" target="_blank"><i class="fas fa-phone"></i></a>
+<a class="contact-icon" href="mailto:humerah610@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+<a class="contact-icon" href="https://www.linkedin.com/in/humerashaik-dataanalyst/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a class="contact-icon" href="https://github.com/HumeraShaik24" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+</section>
+<section class="skills-section" id="skills">
+<h2>Skills</h2>
+<div class="skills-icons">
+<img src="Images/tools/Excel.jfif" alt="Microsoft Excel logo in green and white, representing spreadsheet and data analysis skills, set against a plain background" class="skill-icon">
+<img src="Images/tools/PowerBi.jfif" alt="Power BI" class="skill-icon">
+<img src="Images/tools/Tableau.png" alt="Tableau" class="skill-icon">
+<img src="Images/tools/sql.jfif" alt="PostgreSQL" class="skill-icon">
+<img src="Images/tools/python.png" alt="Python" class="skill-icon">
+<img src="Images/tools/pd.jpg" alt="Pandas" class="skill-icon">
+<img src="Images/tools/plt.png" alt="Matplotlib" class="skill-icon">
+<img src="Images/tools/sns.png" alt="Seaborn" class="skill-icon">
+<img src="Images/tools/AI.png" alt="AI Automation" class="skill-icon">
+<img src="Images/tools/ML.png" alt="Machine Learning" class="skill-icon">
+<img src="Images/tools/Chatgpt.png" alt="Chatgpt" class="skill-icon">
+<img src="Images/tools/co.jfif" alt="Copilot" class="skill-icon">
+<img src="Images/tools/prompt.jfif" alt="Prompt Engimeering" class="skill-icon">
+</div>
+<div class="contact-icons">
+<a class="contact-icon" href="tel:+91 7382273550" title="Contact" target="_blank"><i class="fas fa-phone"></i></a>
+<a class="contact-icon" href="humerah610@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+<a class="contact-icon" href="https://www.linkedin.com/in/humerashaik-dataanalyst/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a class="contact-icon" href="https://github.com/HumeraShaik24" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+</section>
+<section class="experience-section" id="experience">
+<h2>Experience</h2>
+<div class="experience-cards">
+<!-- Card 1 -->
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="Images/tools/bhavna_corp_logo.jpg" alt="Internship 1" class="exp-cert-img">
+<div class="cert-title">MIS Executive
+Bhavna Software India Pvt. Ltd. (Nov 2025 – Present)</div>
+</div>
+<div class="flip-card-back">
+<div class="cert-title">Internship</div>
+<p>Worked on preparing weekly & monthly MIS reports, timesheet analysis, invoice validation, billing loss analysis, and interactive Power BI dashboards. Leveraging AI-powered tools and automation to streamline reporting workflows and deliver actionable business insights.</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="Images/certificate/Kulturehire.png" alt="Internship 1" class="exp-cert-img">
+<div class="cert-title">Internship</div>
+</div>
+<div class="flip-card-back">
+<div class="cert-title">Internship</div>
+<p>Worked on real-world analytics projects involving SQL, Python, Excel, and Power BI. Built interactive dashboards, performed data cleaning and analysis, and generated insights to support business decisions.</p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="Images/certificate/tata.png" alt="Job Simulation 1" class="exp-cert-img">
+<div class="cert-title">Job Simulation</div>
+</div>
+<div class="flip-card-back">
+<div class="cert-title">TATA Job Simulation</div>
+<p>Prepared strategic questions and created data visuals to support senior leadership in effective decision-making.</p>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="Images/certificate/Quantium.png" alt="Job Simulation 2" class="exp-cert-img">
+<div class="cert-title">Job Simulation</div>
+</div>
+<div class="flip-card-back">
+<div class="cert-title">Quantium Job Simulation</div>
+<p>Gained expertise in data preparation, customer insights, uplift testing, and strategic reporting for commercial decision-making.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="contact-icons">
+<a class="contact-icon" href="tel:+91 7382273550" title="Contact" target="_blank"><i class="fas fa-phone"></i></a>
+<a class="contact-icon" href="mailto:humerah610@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+<a class="contact-icon" href="https://www.linkedin.com/in/humerashaik-dataanalyst/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a class="contact-icon" href="https://github.com/HumeraShaik24" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+</section>
+<!-- ...existing code... -->
+ 
+<section class="projects-section" id="projects">
+<h2>Projects</h2>
+<div class="projects-cards">
+<!-- Project 1 -->
+<div class="project-card">
+<h3>Retail Customer Segmentation & Purchase Prediction</h3>
+<p> predicted purchase  
+           behavior with 100% accuracy (ROC-AUC =1.0) due to strong feature separation in this dataset.</p>
+<div class="project-skills">
+<span>RFM</span>
+<span>K-Means</span>
+<span>Pandas</span>
+<span>Matplotlib</span>
+<span>Seaborn</span>
+<span>Sklearn</span>
+</div>
+<a href="https://github.com/HumeraShaik24/Retail_Customer-Segmentation-and-Purchase-Prediction" target="_blank" class="github-link" title="GitHub">
+<i class="fab fa-github"></i>
+</a>
+</div>
+<!-- Project 2 -->
+<div class="project-card">
+<h3>Revenue Leak Detection</h3>
+<p> Detected ₹1.02M revenue leaks across 6,000+ transactions;  
+            implemented corrective strategies.</p>
+<div class="project-skills">
+<span>Financial Analysis</span>
+<span>Pandas</span>
+<span>Matplotlib</span>
+<span>Seaborn</span>
+</div>
+<a href="https://github.com/HumeraShaik24/Passive-Revenue-Leak-Finder" target="_blank" class="github-link" title="GitHub">
+<i class="fab fa-github"></i>
+</a>
+</div>
+<!-- Project 3 -->
+<div class="project-card">
+<h3>AI-Generated Financial Analysis Report</h3>
+<p>AI-powered dashboard analyzing 12 companies; insights on    
+           profitability & anomalies guiding strategies.</p>
+<div class="project-skills">
+<span>AI Automation</span>
+</div>
+<a href="https://github.com/HumeraShaik24/Financial-Statements-Report" target="_blank" class="github-link" title="GitHub">
+<i class="fab fa-github"></i>
+</a>
+</div>
+<!-- Project 4 -->
+<div class="project-card">
+<h3> Telecom Customer Churn Prediction</h3>
+<p>Random Forest model with 79% accuracy; preserved for  
+          deployment.</p>
+<div class="project-skills">
+<span>Random Forest</span>
+<span>Pandas</span>
+<span>Matplotlib</span>
+<span>Seaborn</span>
+<span>Sklearn</span>
+</div>
+<a href="https://github.com/HumeraShaik24/Telecom-customer-churn-prediction" target="_blank" class="github-link" title="GitHub">
+<i class="fab fa-github"></i>
+</a>
+</div>
+<!-- Project 5 -->
+<div class="project-card">
+<h3>Dynamic Pricing Model
+                (E-commerce) </h3>
+<p> Regression-based model, 15% revenue increase, 8% reduction in  
+           price volatility.</p>
+<div class="project-skills">
+<span>Regression</span>
+<span>E-commerce Analytics</span>
+<span>Pandas</span>
+<span>Matplotlib</span>
+<span>Seaborn</span>
+<span>Sklearn</span>
+</div>
+<a href="https://github.com/HumeraShaik24/Dynamic-pricing-model-for-Ecommerce" target="_blank" class="github-link" title="GitHub">
+<i class="fab fa-github"></i>
+</a>
+</div>
+</div>
+</section>
+ 
+<!-- ...existing code... -->
+<section class="mywork-section" id="mywork">
+<h2>Dashboards</h2>
+<div class="mywork-collage">
+<div class="collage-img-wrapper">
+<img src="Images/Dashboards/Hotel.png" alt="Dashboard 1" class="work-img collage-img">
+<span class="click-me-text">Click me</span>
+</div>
+<div class="collage-img-wrapper">
+<img src="Images/Dashboards/HR.png" alt="Dashboard 2" class="work-img collage-img">
+<span class="click-me-text">Click me</span>
+</div>
+<div class="collage-img-wrapper">
+<img src="Images/Dashboards/Home.png" alt="Dashboard 3" class="work-img collage-img">
+<span class="click-me-text">Click me</span>
+</div>
+<div class="collage-img-wrapper">
+<img src="Images/Dashboards/forecasting.png" alt="Dashboard 5" class="work-img collage-img">
+<span class="click-me-text">Click me</span>
+</div>
+<div class="collage-img-wrapper">
+<img src="Images/Dashboards/Agri.png" alt="Dashboard 6" class="work-img collage-img">
+<span class="click-me-text">Click me</span>
+</div>
+<div class="collage-img-wrapper">
+<img src="Images/Dashboards/Executive.png" alt="Dashboard 7" class="work-img collage-img">
+<span class="click-me-text">Click me</span>
+</div>
+<div class="collage-img-wrapper">
+<img src="Images/Dashboards/Learning.png" alt="Dashboard 8" class="work-img collage-img">
+<span class="click-me-text">Click me</span>
+</div>
+<div class="collage-img-wrapper">
+<img src="Images/Dashboards/Manager.png" alt="Dashboard 9" class="work-img collage-img">
+<span class="click-me-text">Click me</span>
+</div>
+<div class="collage-img-wrapper">
+<img src="Images/Dashboards/Mission.png" alt="Dashboard 10" class="work-img collage-img">
+<span class="click-me-text">Click me</span>
+</div>
+<div>
+<div class="contact-icons">
+<a class="contact-icon" href="tel:+91 7382273550" title="Contact" target="_blank"><i class="fas fa-phone"></i></a>
+<a class="contact-icon" href="mailto:humerah610@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+<a class="contact-icon" href="https://www.linkedin.com/in/humerashaik-dataanalyst/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a class="contact-icon" href="https://github.com/HumeraShaik24" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+</section>
+<section class="ai-automation-section slide-section" id="ai-automation">
+<h2>AI Automation</h2>
+<div class="ai-slideshow">
+<img src="Images/AI/AI1.png" alt="1" class="ai-slide active">
+<img src="Images/AI/AI2.png" alt="2" class="ai-slide">
+<img src="Images/AI/AI3.png" alt="3" class="ai-slide">
+<img src="Images/AI/AI14 (3).png" alt="4" class="ai-slide">
+<img src="Images/AI/AI4.png" alt="5" class="ai-slide">
+<img src="Images/AI/AI5.png" alt="6" class="ai-slide">
+<img src="Images/AI/AI14 (4).png" alt="7" class="ai-slide">
+<img src="Images/AI/AI6.png" alt="8" class="ai-slide">
+<img src="Images/AI/AI7.png" alt="9" class="ai-slide">
+<img src="Images/AI/AI14 (1).png" alt="10" class="ai-slide">
+<img src="Images/AI/AI8.png" alt="11" class="ai-slide">
+<img src="Images/AI/AI14 (2).png" alt="12" class="ai-slide">
+</div>
+<div class="contact-icons">
+<a class="contact-icon" href="tel:+91 7382273550" title="Contact" target="_blank"><i class="fas fa-phone"></i></a>
+<a class="contact-icon" href="mailto:humerah610@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+<a class="contact-icon" href="https://www.linkedin.com/in/humerashaik-dataanalyst/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a class="contact-icon" href="https://github.com/HumeraShaik24" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+</section>
+<section class="certifications-section" id="certifications">
+<h2>Certifications</h2>
+<div class="certifications-cards">
+<img src="Images/certificate/be10X.png" alt="Certification 1" class="cert-img hover-zoom">
+<img src="Images/certificate/Prompt.png" alt="Certification 2" class="cert-img hover-zoom">
+<img src="Images/certificate/Simplilearn.png" alt="Certification 3" class="cert-img hover-zoom">
+<img src="Images/certificate/Wscube.png" alt="Certification 4" class="cert-img hover-zoom">
+<img src="Images/certificate/Freedom.png" alt="Certification 5" class="cert-img hover-zoom">
+<img src="Images/certificate/Vertex.jpeg" alt="Certification 6" class="cert-img hover-zoom">
+</div>
+<div class="contact-icons">
+<a class="contact-icon" href="tel:+91 7382273550" title="Contact" target="_blank"><i class="fas fa-phone"></i></a>
+<a class="contact-icon" href="mailto:humerah610@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+<a class="contact-icon" href="https://www.linkedin.com/in/humerashaik-dataanalyst/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a class="contact-icon" href="https://github.com/HumeraShaik24" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
